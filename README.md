@@ -14,7 +14,7 @@
 ## rust env and helix's install from source
 ```
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
-. "$HOME/.cargo/env"
+echo '. "$HOME/.cargo/env"' >>.bashrc
 rustc --version
 https://mirrors.ustc.edu.cn/help/crates.io-index.html #for crates.io faster
 echo 'export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup' >> .bashrc
