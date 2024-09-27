@@ -18,7 +18,12 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 rustc --version
 https://mirrors.ustc.edu.cn/help/crates.io-index.html #for crates.io faster
 echo 'export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup' >> .bashrc
-# apt install helix (if not useful)
+# apt install helix
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:maveonair/helix-editor
+sudo apt update
+sudo apt install helix
+# source
 git clone https://github.com/helix-editor/helix
 cd helix
 cargo install --path helix-term --locked # try again for error link to github
