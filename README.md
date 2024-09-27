@@ -17,6 +17,7 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 . "$HOME/.cargo/env"
 rustc --version
 https://mirrors.ustc.edu.cn/help/crates.io-index.html #for crates.io faster
+echo 'export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup' >> .bashrc
 # apt install helix (if not useful)
 git clone https://github.com/helix-editor/helix
 cd helix
