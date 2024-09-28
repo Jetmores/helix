@@ -8,7 +8,7 @@
 4. 切换分屏:Ctrl+b,;
 
 ## 其它
-1. apt install clangd lldb tmux xclip #xclip(wsl ok|aly no)
+1. apt install clangd lldb tmux xclip #xclip work with helix(wsl ok|aly no)
 2. cd /usr/bin;ln -s lldb-vscode-14 lldb-dap
 
 ## rust env and helix's install from source
