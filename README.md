@@ -26,7 +26,8 @@ sudo apt install helix
 # source
 git clone https://github.com/helix-editor/helix
 cd helix
-cargo install --path helix-term --locked # try again for error link to github
+# try again for error link to github or HELIX_DISABLE_AUTO_GRAMMAR_BUILD=1 cargo install --path helix-term --locked
+cargo install --path helix-term --locked 
 cp -r runtime/ ~/.config/helix # or just onestep: git clone https://gitlab.com/lets2rs/helix.git
 ```
 
