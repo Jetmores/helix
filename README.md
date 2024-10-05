@@ -45,3 +45,10 @@ zig build -Doptimize=ReleaseSafe #error: /root/.zig/zig-linux-x86_64-0.14.0-dev.
 cp zig-out/bin/zls /usr/local/bin/
 hx --health zig
 ```
+
+## programming
+### 静态库和动态库的生成和调用(一样)
+```
+g++ -c example.cc && ar -crv libexample.a example.o
+g++ -fPIC -shared -o libexample.so example.cc 
+```
