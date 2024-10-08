@@ -49,6 +49,13 @@ hx --health zig
 ## programming
 ### 静态库和动态库的生成和调用(一样)
 ```
-g++ -c example.cc && ar -crv libexample.a example.o
+g++ -c example.cc && ar rcs libexample.a example.o
 g++ -fPIC -shared -o libexample.so example.cc 
+ldd ./app
+echo 'export LD_LIBRARY_PATH=/mypath/:$LD_LIBRARY_PATH' >>.bashrc ; . ~/.bashrc
+或者sudo echo 'mypath/' >> /etc/ld.so.conf; sudo ldconfig //重建/etc/ld.so.cache
+```
+### gdb设定disas的intel模式
+```
+sudo echo 'set disassembly-flavor intel' >>/etc/gdb/gdbinit
 ```
